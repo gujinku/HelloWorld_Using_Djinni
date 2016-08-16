@@ -1,0 +1,10 @@
+hello_world = interface +c {
+	static create(): hello_world;
+	static createWithSandboxManager(sandboxManager: sandbox_manager): hello_world;
+	get_hello_world(): string;
+	get_sandbox_path(): string;
+}
+
+sandbox_manager = interface +j +o {
+	get_sandbox_path(): string;
+}
